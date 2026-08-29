@@ -290,7 +290,7 @@ def train_local(
 
             loss.backward()
 
-            # Same clipping used in original E4
+            # Same clipping used in original E2
             torch.nn.utils.clip_grad_norm_(
                 model.parameters(),
                 max_norm=1.0
