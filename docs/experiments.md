@@ -93,12 +93,12 @@ results/
     │   │   └── global_round_10.pth
     │   └── E1_No_DP_results.pkl
     │
-    └── E4_FL_DP/
+    └── E2_FL_DP/
         ├── global_models/
         │   ├── global_round_1.pth
         │   ├── ...
         │   └── global_round_10.pth
-        └── E4_FL_DP_results.pkl
+        └── E2_FL_DP_results.pkl
 ```
 
 ## Evaluation Metrics
