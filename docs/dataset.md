@@ -21,50 +21,33 @@ The original cyber dataset is based on hourly packet-capture (`.pcap`) files. Pe
 ### Physical Data
 
 ```text
-SensorData.csv
 SensorDataMasterTransposed.csv
-
-PhysicalData_Clean_1.csv .. PhysicalData_Clean_5.csv
-PhysicalData_Clean_Repaired_1.csv .. PhysicalData_Clean_Repaired_5.csv
 ```
 
-These are the raw, master, cleaned, and repaired physical representations used during preparation.
+This master representation is used as the physical-data input for preprocessing and subsequent feature extraction.
 
 ### Device Data
 
 ```text
-CUMaster
-BREMaster
+BREMaster.csv
+CUMaster.csv
 ```
 
-Supporting device information and mappings are also used during preparation and synchronization.
+These master files are used as the device-data inputs for preprocessing and synchronization. The combined device master data is approximately 3.82 GB.
 
 ### Cyber Data
 
-Raw cyber / cyber-physical sources:
-
 ```text
-BRECyPhy_W1 .. BRECyPhy_W5
-
-CUCyPhy_1711_Latest
-CUCyPhy_141122-1628
-CUCyPhy_151122-1740
-CUCyPhy_161122-1615
-CUCyPhy_281022
-
-CUCyPhy_states1 .. CUCyPhy_states4
+CyberMasterNormalisedNoInfo.csv
 ```
 
-Corresponding cyber/device master representations:
+The cyber modality uses the cyber master representation together with the corresponding raw PCAP files. The raw packet captures were inspected and used where required to address missing records in the cyber master data before generating the final cyber representation.
 
-```text
-BREMaster
-CUMaster
-```
-
-Packet-level fields include frame number, timestamp, source, destination, protocol, packet length, and packet info; these are transformed into the feature representation used by the cyber encoder.
+Packet-level fields include frame number, timestamp, source, destination, protocol, packet length, and packet information; these are transformed into the feature representation used by the cyber encoder.
 
 ### Supporting Metadata
+
+The following metadata files are used to support the preparation, mapping, and synchronization of the three modalities:
 
 ```text
 ActivityLabels.json
