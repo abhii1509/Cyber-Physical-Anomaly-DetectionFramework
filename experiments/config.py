@@ -6,7 +6,7 @@ from pathlib import Path
 USE_DP = os.environ.get("PCCF_USE_DP", "").strip() == "1"
 
 if USE_DP:
-    EXPERIMENT = "E4_FL_DP"
+    EXPERIMENT = "E2_FL_DP"
 else:
     EXPERIMENT = "E1_No_DP"
 
