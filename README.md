@@ -1,8 +1,6 @@
-# PCCF-GLM
+## Privacy-Preserving Cross-Layer Anomaly Detection in Smart Homes Using Federated Learning with Gradient Leakage Mitigation
 
-**Privacy-Preserving Cross-Layer Cyber-Physical Anomaly Detection Using Federated Learning and Differential Privacy for Gradient Leakage Mitigation**
-
-PCCF-GLM detects anomalies in smart-home environments by fusing physical, device, and network (cyber) sensor data. The three modalities are encoded independently, compared for cross-layer consistency, fused through an autoencoder, and scored by reconstruction error. The fusion model is trained via Federated Learning across simulated clients, with an optional Differential Privacy mode for gradient leakage mitigation.
+Anomaly detection in smart-home environments by fusing physical, device, and network (cyber) sensor data. The three modalities are encoded independently, compared for cross-layer consistency, fused through an autoencoder, and scored by reconstruction error. The fusion model is trained via Federated Learning across simulated clients, with an optional Differential Privacy mode for gradient leakage mitigation.
 
 ## Table of Contents
 
