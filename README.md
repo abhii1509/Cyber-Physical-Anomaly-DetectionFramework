@@ -27,8 +27,8 @@ Full methodology → [`docs/methodology.md`](docs/methodology.md)
 ## Quick Start
 
 ```bash
-git clone <repo-url>
-cd PCCF-GLM
+git clone https://github.com/abhii1509/Cyber-Physical-Anomaly-DetectionFramework.git
+cd Cyber-Physical-Anomaly-DetectionFramework
 pip install -r requirements.txt
 
 # 1. Prepare data and train modality encoders
@@ -59,9 +59,11 @@ Full data-preparation prerequisites → [`docs/dataset.md`](docs/dataset.md)
 ## Repository Structure
 
 ```text
-PCCF-GLM/
+Cyber-Physical-Anomaly-DetectionFramework/
 │   .gitignore
+│   LICENSE
 │   README.md
+│   requirements.txt
 │
 ├── data/                 # raw/processed data (generated files not committed)
 ├── docs/
@@ -75,6 +77,11 @@ PCCF-GLM/
 │   ├── server.py          # Flower server, FedProx aggregation
 │   ├── evaluate.py        # evaluates global model on held-out set
 │   └── run.py             # starts server/clients, DP on/off prompt
+├── figures/               # plots and diagrams used in docs/paper
+    ├── Architecture.png
+    ├── ConfusionMatrix_8020.png
+    ├── ErrorDistribution_8020.png
+    ├── ROC_8020.png
 ├── models/                # trained checkpoints (not committed)
 ├── results/               # metrics and figures (not committed)
 └── scripts/
@@ -147,7 +154,7 @@ Python 3.x with:
 - Scikit-learn
 - Joblib
 
-See `requirements.txt` for pinned versions.
+See [`requirements.txt`](requirements.txt) for pinned versions.
 
 ## Citation
 
@@ -160,4 +167,4 @@ DOI: 10.3389/friot.2023.1275080
 
 ## License
 
-This repository is intended for research and academic use.
+This project is licensed under the terms of the [LICENSE](LICENSE) file in this repository.
