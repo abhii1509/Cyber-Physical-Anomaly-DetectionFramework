@@ -154,14 +154,6 @@ Python 3.x with:
 
 See [`requirements.txt`](requirements.txt) for pinned versions.
 
-## Citation
-
-```text
-Majib, Y., Alosaimi, M., Asaturyan, A., and Perera, C.
-Dataset for cyber–physical anomaly detection in smart homes.
-Frontiers in the Internet of Things, 2023.
-DOI: 10.3389/friot.2023.1275080
-```
 
 ## License
 
