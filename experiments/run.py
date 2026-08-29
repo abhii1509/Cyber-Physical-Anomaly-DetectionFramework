@@ -26,7 +26,7 @@ print(
 )
 
 print(
-    "1 - With Differential Privacy (E4_FL_DP)"
+    "1 - With Differential Privacy (E2_FL_DP)"
 )
 
 print(
@@ -59,7 +59,7 @@ env["PCCF_USE_DP"] = choice
 
 if choice == "1":
 
-    experiment = "E4_FL_DP"
+    experiment = "E2_FL_DP"
 
 else:
 
