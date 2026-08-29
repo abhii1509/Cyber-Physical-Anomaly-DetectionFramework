@@ -8,33 +8,29 @@ venv/
 .venv/
 env/
 ENV/
+.env
 
-# Large trained models
+# Trained models
 *.pth
 *.pt
 *.ckpt
 
-# Serialized datasets / generated data
+# Generated datasets and serialized data
 *.pkl
 *.pickle
-
-# Generated CSV datasets
 data/**/*.csv
+data/**/*.json
+data/**/*.zip
 
-# Logs
+# Logs and temporary files
 *.log
+*.tmp
+*.temp
 
-# Jupyter
-.ipynb_checkpoints/
-
-# OS files
-.DS_Store
-Thumbs.db
-
-# IDE
+# IDE files
 .vscode/
 .idea/
 
-# Temporary files
-*.tmp
-*.temp
+# Operating system files
+.DS_Store
+Thumbs.db
